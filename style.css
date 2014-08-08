@@ -57,6 +57,7 @@ textarea{
 	height: 48px;
 	background-color: #86a736;
 	line-height: 48px;
+	z-index:9999;
 }
 #navigation ul li{
 	display:inline;
@@ -95,11 +96,18 @@ textarea{
 #banner{
 	padding: 13px;
 }
+.bannertext{
+	border-radius:5px;
+	color:white !important;
+	line-height:25px;
+	font-size:25px;
+	font-family: 'Cuprum', sans-serif;
+}
 #bannershadow{
 	margin-top: -5px;
 }
 #content{
-	margin-top:35px;
+	margin-top:15px;
 }
 #content #left{
 	line-height: 30px;
@@ -334,6 +342,9 @@ textarea{
 		float:none;
 		margin-top:20px;
 	}
+	.bannertext{
+		font-size:18px;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -344,7 +355,15 @@ textarea{
 		display:block;
 	}
 }
+@media screen and (max-width: 480px){
+	.bannertext{
+		font-size:14px;
+	}
+}
 @media screen and (max-width: 370px){
+	.bannertext{
+		font-size:12px;
+	}
 	#contact{
 		font-size:19px !important;
 	}

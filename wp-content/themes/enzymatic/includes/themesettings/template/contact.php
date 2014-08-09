@@ -26,6 +26,14 @@
                 </td>
             </tr>
             <tr valign="top">
+                <th scope="row">Goolge Map Link</th>
+                <td>
+                    <textarea name="enzymatic_contact_setting[googlemap]" style="width:300px;height:150px;"><?php echo $contacts['googlemap']; ?></textarea>
+                    <br/>
+                    <?php echo $contacts['googlemap']; ?>
+                </td>
+            </tr>
+            <tr valign="top">
                 <th scope="row">Facebook Link</th>
                 <td>
                     <input type="text" name="enzymatic_contact_setting[facebook]" size="25" 

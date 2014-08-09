@@ -38,6 +38,7 @@
 	function require_includes(){
 		require_once get_template_directory()."/includes/customposts/banner.php";
 		require_once get_template_directory()."/includes/customposts/testimonial.php";
+		require_once get_template_directory()."/includes/customposts/team.php";
 
 		require_once get_template_directory()."/includes/themesettings/index.php";
 		require_once get_template_directory()."/includes/cmb/index.php";

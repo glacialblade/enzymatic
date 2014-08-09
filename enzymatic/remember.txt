@@ -1,0 +1,6 @@
+robots.txt
+google sitemap
+404 page with sitemap
+
+testimonials
+sidebar

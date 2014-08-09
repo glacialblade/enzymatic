@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+
+html,body{
+	padding:2px;
+	font-family: arial;
+	font-size: 14px;
+	color: #333333;
+	margin-top:-5px;
+	line-height: 30px;
+}
+h1,h2,h3,h4,h5{
+	color: #86a736;
+	font-family: 'Cuprum', sans-serif;
+}
+a,strong{
+	color: #86a736;
+}
+img{
+	border:0px;
+}
+input[type="text"]{
+	padding:5px;
+	width:300px;
+}
+input[type="button"],input[type="submit"]{
+	background:#86a736;
+	border:none;
+	cursor:pointer;
+	border-radius:5px;
+	color:white;
+	padding:10px 15px;
+}
+textarea{
+	font-family:arial;
+	width:500px;
+}
+ul{
+	list-style: none;
+	padding:8px 0px;
+}
+ul li{
+	background-image: url(../images/listimage.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 20px;
+}
+hr{
+	border: none;
+	border-top: 1px solid #86a736;
+}

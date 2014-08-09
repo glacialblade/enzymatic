@@ -46,6 +46,15 @@ hr{
 }
 #header{
 	padding: 20px 0px;
+	position:relative;
+}
+#headerbg{
+	height:306px;
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:315px;
+	background:url(images/headerbackground.png);
 }
 #header #logo{
 	float: left;
@@ -110,6 +119,7 @@ hr{
 
 #banner{
 	padding: 13px;
+	background:white;
 }
 .bannertext{
 	border-radius:5px;
@@ -252,6 +262,13 @@ hr{
 	color: #AAAAAA;
 	text-align:center;
 }
+.wpcf7-validation-errors{
+	background:#fcf8e3;
+}
+.wpcf7-mail-sent-ok{
+	background:#dff0d8;
+	border:1px solid #86a736 !important;
+}
 
 .clear{
 	clear: both;
@@ -284,6 +301,9 @@ hr{
 	#header{
 		width:90%;
 		margin:0 auto;
+	}
+	#headerbg{
+		display:none;
 	}
 	#banner,#bannershadow{
 		padding:0px;

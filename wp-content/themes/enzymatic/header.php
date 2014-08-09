@@ -18,6 +18,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="wrapper">
+		<div id="headerbg"></div>
 		<div id="header">
 			<div id="logo"><a class="nounderline" href="<?php get_bloginfo(); ?>"><?php get_image("logo.png","logo"); ?></a></div>
 			<div id="contact">

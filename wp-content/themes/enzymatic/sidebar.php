@@ -1,3 +1,4 @@
+
 <div class="sidebarbox">
 	<div class="sidebarboxheading">
 		ENQUIRE NOW
@@ -15,14 +16,6 @@
 	</div>
 </div>
 <br/>
-<div class="sidebarimagebox">
-	<?php get_image("sidebarimage.png","sidebarimage"); ?>
-</div>
-<div class="sidebarimageboxshadow"><?php get_image("sidebarimageshadow.png","sidebarimageshadow"); ?></div>
-<br/>
-<div class="sidebarimagebox">
-	<a href="https://miracleofnature.net.au/">
-		<?php get_image("miracle.png","miracle"); ?>
-	</a>
-</div>
-<div class="sidebarimageboxshadow"><?php get_image("sidebarimageshadow.png","sidebarimageshadow"); ?></div>
+<?php
+	dynamic_sidebar("sidebar");
+?>

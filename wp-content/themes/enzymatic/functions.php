@@ -1,6 +1,7 @@
 <?php
 	function enzymatic_init(){
 		require_includes();
+		enzymatic_widgets();
 
 		add_editor_style(array("css/editor-style.css"));
 		add_theme_support("post-thumbnails");
@@ -11,6 +12,21 @@
 		));
 	}
 	add_action( "after_setup_theme", "enzymatic_init" );
+
+	function enzymatic_widgets(){
+		require( get_template_directory() . '/includes/widgets/imagelink/index.php' );
+
+		register_widget( 'ImageLinks' );
+		register_sidebar( array(
+			'name' => __('Sidebar'),
+			'id' => 'sidebar',
+			'before_widget' => '',
+			'after_widget' => "",
+			'before_title' => '',
+			'after_title' => '',
+		) );
+	}
+
 
 	function enzymatic_mainscripts(){
 		wp_enqueue_style("style",get_stylesheet_uri());

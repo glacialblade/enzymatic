@@ -31,7 +31,7 @@
 							</tr>
 							<tr>
 								<td valign="top"><?php get_image("icon_email.png","email"); ?></td>
-								<td><a href="mailto:<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>"><?php echo enzymatic_setting("enzymatic_contact_setting","email"); ?></a></td>
+								<td><a href="mailto:<?php echo enzymatic_setting("enzymatic_contact_setting","email"); ?>"><?php echo enzymatic_setting("enzymatic_contact_setting","email"); ?></a></td>
 							</tr>
 						</table>
 						<br/>

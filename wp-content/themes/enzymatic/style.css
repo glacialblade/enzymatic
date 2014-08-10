@@ -448,6 +448,7 @@ hr{
 		position:inherit;
 		width:100%;
 		left:0px;
+		height:100%;
 	}
 	#navigation ul li ul li{
 		display:list-item;

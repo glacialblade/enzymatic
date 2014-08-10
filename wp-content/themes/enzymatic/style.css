@@ -178,7 +178,7 @@ hr{
 	position: relative;
 }
 .teamlabel{
-	font-family: 'Cuprum', sans-serif;;
+	font-family: 'Cuprum', sans-serif;
 	background:white;
 	text-align:center;
 	position:absolute;
@@ -221,7 +221,7 @@ hr{
 }
 .sidebarimageboxshadow{
 	margin-top:-6px;
-	margin-left:-5px;
+	width:100%;
 }
 .sidebarbox{}
 .sidebarboxheading{

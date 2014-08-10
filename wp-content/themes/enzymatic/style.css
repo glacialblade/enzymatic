@@ -216,6 +216,9 @@ hr{
 .sidebarimagebox{
 	width:280px;
 }
+.sidebarimagebox img{
+	width:100%;
+}
 .sidebarimageboxshadow{
 	margin-top:-6px;
 	margin-left:-5px;

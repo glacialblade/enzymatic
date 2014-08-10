@@ -18,12 +18,12 @@ class ImageLinks extends WP_Widget {
 	public function widget( $args, $instance ) {
 		?>
 		<div class="sidebarimagebox">
-			<img src="<?php echo $instance['image']; ?>" alt="image">
+			<a href="<?php echo $instance['link']; ?>">
+				<img src="<?php echo $instance['image']; ?>" alt="image">
+			</a>
 		</div>
 		<div class="sidebarimageboxshadow">
-			<a href="<?php echo $instance['link']; ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/sidebarimageshadow.png">
-			</a>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/sidebarimageshadow.png" />
 		</div>
 		<br/>
 		<?php

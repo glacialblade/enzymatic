@@ -1,4 +1,8 @@
-
+<h1>
+	<img src="<?php echo get_template_directory_uri(); ?>/images/logonotext.png" alt="logo"
+	     id="logonotext">
+	<span id="logonotext_text">We're available 24/7</span>
+</h1>
 <div class="sidebarbox">
 	<div class="sidebarboxheading">
 		ENQUIRE NOW

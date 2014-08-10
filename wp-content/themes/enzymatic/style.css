@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5{
 	color: #86a736;
 	font-family: 'Cuprum', sans-serif;
 }
-a,strong{
+a{
 	color: #86a736;
 }
 img{
@@ -76,14 +76,14 @@ hr{
 }
 #navigation ul li{
 	display:inline;
-	margin-left: 8px;
+	margin-left: 12px;
 	position:relative;
 	z-index:9999;
 }
 #navigation ul li a{
 	font-family: 'Cuprum', sans-serif;
 	color: #fff;
-	padding: 15px 10px;
+	padding: 15px 20px;
 	font-size: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -97,9 +97,9 @@ hr{
 #navigation ul li ul{
 	display:none;
 	position:absolute;
-	width:200px;
+	width:280px;
 	background:none;
-	left:-8px;
+	left:-12px;
 }
 #navigation ul li ul li{
 	display:block;
@@ -144,9 +144,19 @@ hr{
 	float: left;
 	width: 645px;
 }
+#content #left h2{
+	padding:0px;
+	margin-bottom:-25px;
+}
+#content #left h3,#content #left h4,#content #left h5,#content #left h6{
+	font-family:arial;
+	padding-bottom:0px;
+	margin-bottom:-15px;
+}
 #content #left ul{
 	list-style: none;
 	padding:8px 0px;
+	margin-top:10px;
 }
 #content #left ul li{
 	background-image: url(images/listimage.png);
@@ -212,6 +222,13 @@ hr{
 #content #right{
 	float: right;
 	width: 300px;
+}
+#logonotext{
+	vertical-align:middle;
+	margin-top:-5px;
+}
+#logonotext_text{
+	color:#00467c;
 }
 .sidebarimagebox{
 	width:280px;

@@ -1,6 +1,6 @@
 <?php
 	/* 
-	Template Name: Testimonials
+	Template Name(hide): Testimonials
 	Description: Template used for listing testimonials
 	*/
 ?>

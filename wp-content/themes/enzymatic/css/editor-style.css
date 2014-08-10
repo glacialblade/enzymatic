@@ -12,7 +12,16 @@ h1,h2,h3,h4,h5{
 	color: #86a736;
 	font-family: 'Cuprum', sans-serif;
 }
-a,strong{
+h2{
+	padding:0px;
+	margin-bottom:-25px;
+}
+h3,h4,h5,h6{
+	font-family:arial;
+	padding-bottom:0px;
+	margin-bottom:-15px;
+}
+a{
 	color: #86a736;
 }
 img{
@@ -37,6 +46,7 @@ textarea{
 ul{
 	list-style: none;
 	padding:8px 0px;
+	margin-top:10px;
 }
 ul li{
 	background-image: url(../images/listimage.png);

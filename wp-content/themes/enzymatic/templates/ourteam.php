@@ -1,6 +1,6 @@
 <?php
 	/* 
-	Template Name: Our Team
+	Template Name(hide): Our Team
 	Description: Template used for listing team members.
 	*/
 ?>

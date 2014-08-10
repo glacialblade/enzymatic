@@ -12,7 +12,9 @@
 				<?php
 					$teams = new WP_Query(array(
 						"post_type"=>"team",
-						"post_status"=>"publish"
+						"post_status"=>"publish",
+						"orderby"=>"menu_order",
+						"order"=>"ASC"
 					));
 				?>
 

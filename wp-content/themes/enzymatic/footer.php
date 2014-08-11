@@ -11,7 +11,7 @@
 					</div><br/>
 					<div class="footerboxcontent">
 						<?php $aboutus = get_post_meta( 7 ); ?>
-						<?php echo $aboutus['aboutus_footervalue'][0]; ?>
+						<?php echo $aboutus['footervalue'][0]; ?>
 						<br/><br/>
 						<a href="<?php echo get_permalink(7); ?>">read more >></a>
 					</div>
@@ -48,21 +48,24 @@
 				</div>
 				<div class="footerbox">
 					<div class="footerboxcontent">
-						<h1>Testimonials</h1><br/>
+						<h1>Enquire Now</h1><br/>
 						<?php
-							$testimonials = new WP_Query(array(
-								"post_type"=>"testimonial",
-								"post_status"=>"publish",
-								"showposts"=>2
-							));
+							// $testimonials = new WP_Query(array(
+							// 	"post_type"=>"testimonial",
+							// 	"post_status"=>"publish",
+							// 	"showposts"=>2
+							// ));
 						?>
 
-						<?php while($testimonials->have_posts()): $testimonials->the_post(); ?>
-							<strong><?php the_title(); ?></strong> <i><small><?php the_time('F j, Y'); ?></small></i>
-							<?php the_excerpt(); ?>
-							<br/>
-						<?php endwhile; wp_reset_postdata(); ?>
-						<i><a href="<?php echo get_permalink(29); ?>">see more testimonials >></a></i>
+						<?php //while($testimonials->have_posts()): $testimonials->the_post(); ?>
+							<!--<strong><?php //the_title(); ?></strong> <i><small><?php //the_time('F j, Y'); ?></small></i>!-->
+							<?php //the_excerpt(); ?>
+							<!--<br/>!-->
+						<?php //endwhile; wp_reset_postdata(); ?>
+						<?php $contactus = get_post_meta( 27 ); ?>
+						<?php echo $contactus['footervalue'][0]; ?>
+						<br/><br/>
+						<i><a href="<?php echo get_permalink(27); ?>">Enquire Now!</a></i>
 					</div>
 				</div>
 				<div class="clear"></div>

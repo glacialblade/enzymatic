@@ -1,11 +1,11 @@
 <?php
 	add_filter('cmb_meta_boxes','aboutus');
 	function aboutus(array $meta_boxes) {
-		$meta_boxes['aboutus'] = array(
+		$meta_boxes['footervalue'] = array(
 			'id'         => 'Footer Value',
 			'title'      => __( 'Footer Value', 'cmb' ),
 			'pages'      => array('page',),
-			'show_on'    => array('key'=>'id','value'=>array( 7, ), ),
+			'show_on'    => array('key'=>'id','value'=>array( 7,27, ), ),
 			'context'    => 'normal',
 			'priority'   => 'high',
 			'show_names' => false, 
@@ -13,7 +13,7 @@
 			'fields'     => array(
 				array(
 					'name' => "footervalue",
-					'id'   => "aboutus_footervalue",
+					'id'   => "footervalue",
 					'type' => 'textarea',
 				)
 			)

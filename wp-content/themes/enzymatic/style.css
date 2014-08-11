@@ -100,6 +100,7 @@ hr{
 	width:280px;
 	background:none;
 	left:-12px;
+	top:32px;
 }
 #navigation ul li ul li{
 	display:block;
@@ -257,7 +258,7 @@ hr{
 
 #footernav{ 
 	background-color: #86a736;
-	margin-top:50px;
+	margin-top:10px;
 }
 #footernavcontent{
 	color: #fff;
@@ -466,6 +467,7 @@ hr{
 		width:100%;
 		left:0px;
 		height:100%;
+		top:0px;
 	}
 	#navigation ul li ul li{
 		display:list-item;

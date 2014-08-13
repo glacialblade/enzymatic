@@ -35,13 +35,13 @@
 							</tr>
 						</table>
 						<br/>
-						<a href="<?php echo enzymatic_setting("enzymatic_contact_setting","facebook"); ?>" class="nounderline">
+						<a target="_blank" href="<?php echo enzymatic_setting("enzymatic_contact_setting","facebook"); ?>" class="nounderline">
 							<td valign="top"><?php get_image("icon_facebook.png","facebook"); ?></td>
 						</a> 
-						<a href="<?php echo enzymatic_setting("enzymatic_contact_setting","twitter"); ?>" class="nounderline">
+						<a target="_blank" href="<?php echo enzymatic_setting("enzymatic_contact_setting","twitter"); ?>" class="nounderline">
 							<td valign="top"><?php get_image("icon_twitter.png","twitter"); ?></td>
 						</a> 
-						<a href="<?php echo enzymatic_setting("enzymatic_contact_setting","youtube"); ?>" class="nounderline">
+						<a target="_blank" href="<?php echo enzymatic_setting("enzymatic_contact_setting","youtube"); ?>" class="nounderline">
 							<td valign="top"><?php get_image("icon_youtube.png","youtube"); ?></td>
 						</a> 
 					</div>

@@ -43,6 +43,8 @@
 		require_once get_template_directory()."/includes/themesettings/index.php";
 		require_once get_template_directory()."/includes/cmb/index.php";
 		require_once get_template_directory()."/includes/disablecomments.php";
+
+		require_once get_template_directory()."/includes/shortcodes/shortcodes.php";
 	}
 
 	function enzymatic_login(){ ?><style type="text/css">body.login div#login{margin-top:-50px;}body.login div#login h1 a {background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png);background-size: 237px 163px;display:block;width:237px;height:163px;}</style><?php }

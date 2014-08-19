@@ -88,7 +88,7 @@ hr{
 	text-decoration: none;
 	text-transform: uppercase;
 }
-#navigation ul li a:hover{
+#navigation ul li a:hover,#navigation ul li .current_page_item a{
 	background-color: #00477b;
 }
 #navigation ul li:hover ul{
@@ -107,7 +107,7 @@ hr{
 	background-color: #86a736;
 	width:100%;
 }
-#navigation ul li ul li:hover{
+#navigation ul li ul li:hover,#navigation ul li ul .current_page_item{
 	background-color: #00477b;
 }
 #menuicon{

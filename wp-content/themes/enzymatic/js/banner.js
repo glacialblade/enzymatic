@@ -22,11 +22,11 @@
    					"position":"absolute",
    					"overflow":"hidden"
    				});
-               imagewrappers.find("img").css("height","auto");
+                imagewrappers.find("img").css("height","auto");
    				textwrappers.css({
    					"position":"absolute",
-   					"bottom":"20px",
-   					"padding":"8px 15px",
+   					"bottom":"10px",
+   					"padding":"8px 5px",
    					"background":"rgba(0,0,0,0.5)",
    					"color":"#d2d2d2"
    				});
@@ -65,7 +65,14 @@
    				});
    			},
    			animatebannertext:function(){
-               textwrappers.eq(this.currentimage).css("width",textwrappers.eq(this.currentimage));
+                //textwrappers.eq(this.currentimage).css("width",textwrappers.eq(this.currentimage).width());
+                //textwrappers.eq(this.currentimage).css("right","10px");
+                var twidth = textwrappers.eq(this.currentimage).innerWidth();
+                var iwidth = imagewrappers.eq(this.currentimage).innerWidth();
+                
+                if(twidth > iwidth - 10 && iwidth != 0){
+                    textwrappers.eq(this.currentimage).css("width",iwidth-50);
+                }
    				textwrappers.eq(this.currentimage).animate({
    					left:"10px"
    				},800,function(){
@@ -83,7 +90,7 @@
    				$.each(textwrappers,function(key,val){
    					if(key != banner.currentimage){
 	   					var width = $(this).css("width");
-	   					$(this).css("left",-1000);
+	   					$(this).css("left",-2000);
 	   				}
    				});
    			}
@@ -94,7 +101,10 @@
    		/****************** EVENTS ******************/
    		$(window).resize(function(){
    			banner.fixheight();
-
    		});
+
+        imagewrappers.find("img").load(function(){
+            banner.fixheight();
+        })
    }; 
 })( jQuery );

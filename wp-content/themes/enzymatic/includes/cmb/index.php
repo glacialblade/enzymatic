@@ -1,6 +1,26 @@
 <?php
-	add_filter('cmb_meta_boxes','aboutus');
-	function aboutus(array $meta_boxes) {
+	add_filter('cmb_meta_boxes','pages_cmb');
+	function pages_cmb(array $meta_boxes) {
+		$meta_boxes['enquirybutton'] = array(
+			'id'         => 'Enquiry Button',
+			'title'      => __( 'Enquiry Button', 'cmb' ),
+			'pages'      => array('page',),
+			'context'    => 'normal',
+			'priority'   => 'high',
+			'show_names' => false, 
+			"desc"       => "asdf",
+			'fields'     => array(
+				array(
+					'name' => "enquirybutton",
+					'id'   => "enquirybutton",
+					'type'    => 'select',
+					'options' => array(
+						'Enquiry Button' => 'Enquiry Button',
+						'Request a Quote'   => 'Request a Quote'
+					)
+				)
+			)
+		);
 		$meta_boxes['footervalue'] = array(
 			'id'         => 'Footer Value',
 			'title'      => __( 'Footer Value', 'cmb' ),

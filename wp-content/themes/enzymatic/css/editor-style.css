@@ -54,6 +54,12 @@ ul li{
 	background-position: 0px 5px;
 	padding-left: 20px;
 }
+ul.pin li{
+	background-image: url(../images/listimage3.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 25px;
+}
 hr{
 	border: none;
 	border-top: 1px solid #86a736;

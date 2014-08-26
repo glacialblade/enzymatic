@@ -5,13 +5,16 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()."/images/favicon.png"; ?>">
 	<!--[if IE]>
 	   <style type="text/css">
+	   	/*
 	   .bannertext { 
 	       background:transparent !important;
 	       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#55555555,endColorstr=#55555555) !important; 
 	       zoom: 1 !important;
 	    } 
+	    */
 	    </style>
 	<![endif]-->
 	<?php wp_head(); ?>
@@ -24,6 +27,14 @@
 			<div id="contact">
 				CALL US
 				<span class="blue"><?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?></span>
+				<!--
+				<br/>
+				<div id="code">
+					<?php //get_image("entercode.png","code"); ?>
+					<div id="codecontent">sample code goes here.</div>
+				</div>
+				<div class="clear"></div>
+				!-->
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -45,7 +56,9 @@
 			<?php while($banners->have_posts()): $banners->the_post(); ?>
 				<div class="bannerimage">
 					<?php echo get_the_post_thumbnail(); ?>	
-					<div class="bannertext"><?php the_excerpt(); ?></div>	
+					<?php if(get_the_excerpt() != ""): ?>
+						<div class="bannertext"><?php the_excerpt(); ?></div>	
+					<?php endif; ?>
 				</div>
 			<?php endwhile; wp_reset_postdata(); ?>
 		</div>

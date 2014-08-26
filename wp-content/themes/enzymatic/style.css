@@ -17,7 +17,7 @@ a{
 img{
 	border:0px;
 }
-input[type="text"],input[type="email"]{
+input[type="text"],input[type="email"],select{
 	padding:5px;
 	width:300px;
 }
@@ -60,11 +60,12 @@ hr{
 	float: left;
 }
 #header #contact{
+	text-align:right;
 	font-family: 'Cuprum', sans-serif;
 	float: right;
-	margin-top: 130px;
 	font-size: 30px;
 	font-weight: bold;
+	margin-top:130px;
 }
 #navigation ul{
 	padding: 0px;
@@ -83,7 +84,7 @@ hr{
 #navigation ul li a{
 	font-family: 'Cuprum', sans-serif;
 	color: #fff;
-	padding: 15px 20px;
+	padding: 15px 43px;
 	font-size: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -107,6 +108,9 @@ hr{
 	background-color: #86a736;
 	width:100%;
 }
+#navigation ul li ul li a{
+	padding: 15px 20px;
+}
 #navigation ul li ul li:hover,#navigation ul li ul .current_page_item{
 	background-color: #00477b;
 }
@@ -121,6 +125,7 @@ hr{
 #banner{
 	padding: 13px;
 	background:white;
+	min-height:343px;
 }
 .bannertext{
 	border-radius:5px;
@@ -128,10 +133,15 @@ hr{
 	line-height:25px;
 	font-size:25px;
 	font-family: 'Cuprum', sans-serif;
+	background:transparent !important;
 }
 .bannertext p{
 	margin:0px;
 	padding:0px;
+	text-shadow:1px 1px #555555;
+	-webkit-text-shadow: 1px 1px #555555;
+	-khtml-text-shadow: 1px 1px #555555;
+	-moz-text-shadow: 1px 1px #555555;
 }
 #bannershadow{
 	margin-top: 0px;
@@ -160,10 +170,16 @@ hr{
 	margin-top:10px;
 }
 #content #left ul li{
-	background-image: url(images/listimage.png);
+	background-image: url(images/listimage2.png);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
-	padding-left: 20px;
+	padding-left: 25px;
+}
+#content #left ul.pin li{
+	background-image: url(images/listimage3.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 25px;
 }
 #content #left ul.gallery{
 	list-style:none;
@@ -224,12 +240,19 @@ hr{
 	float: right;
 	width: 300px;
 }
+#sidebarlogo{
+	margin-bottom:15px;
+}
 #logonotext{
+	margin-right:10px;
+	float:left;
 	vertical-align:middle;
-	margin-top:-5px;
 }
 #logonotext_text{
 	color:#00467c;
+	text-align:justify;
+	font-family:'Cuprum';
+	font-size:18px;
 }
 .sidebarimagebox{
 	width:280px;
@@ -254,6 +277,23 @@ hr{
 }
 .sidebarboxcontent{
 	padding:10px;
+}
+.code_wrapper{
+	position:relative;
+}
+.code{
+	color:white;
+	position:absolute;
+	bottom:5px;
+	left:5px;
+	font-size:11px;
+	font-family:'Cuprum',sans-serif;
+}
+.code_text{
+	font-weight:bold;
+	font-style:italic;
+	font-family:'Courier New';
+	font-size:12px;
 }
 
 #footernav{ 
@@ -333,6 +373,9 @@ hr{
 	border:1px solid #86a736 !important;
 }
 
+.textcenter{
+	text-align:center;
+}
 .clear{
 	clear: both;
 }
@@ -341,6 +384,9 @@ hr{
 }
 .blue{
 	color: #00477b;
+}
+.green{
+	color: #86a736;
 }
 .nopadding{
 	padding:0px;
@@ -368,6 +414,9 @@ hr{
 	#headerbg{
 		display:none;
 	}
+	#banner{
+		min-height:0px;
+	}
 	#banner,#bannershadow{
 		padding:0px;
 	}
@@ -385,6 +434,12 @@ hr{
 		margin:0 auto;
 		width:90%;
 		text-align:center;
+	}
+	#sidebarlogo{
+		margin-top:15px;
+	}
+	#navigation ul li ul li a{
+		padding: 0px;
 	}
 	.sidebarimagebox{
 		margin:0 auto;
@@ -490,6 +545,7 @@ hr{
 	#header #contact{
 		float:none;
 		margin-top:20px;
+		text-align:center;
 	}
 	.bannertext{
 		font-size:18px;
@@ -506,7 +562,7 @@ hr{
 	#navigation ul{
 		width:80%;
 	}
-	input[type="text"],input[type="email"]{
+	input[type="text"],input[type="email"],select{
 		width:70%;
 	}
 	textarea{
@@ -516,6 +572,7 @@ hr{
 @media screen and (max-width: 480px){
 	.bannertext{
 		font-size:14px;
+		line-height:14px;
 	}
 	#navigation ul li a{
 		text-indent:15px;
@@ -531,10 +588,11 @@ hr{
 	}
 }
 @media screen and (max-width: 370px){
-	.bannertext{
-		font-size:12px;
-	}
 	#contact{
 		font-size:19px !important;
+	}
+	#twentyfourseven{
+		width:90%;
+		margin:0 auto;
 	}
 }

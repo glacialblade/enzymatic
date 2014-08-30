@@ -38,6 +38,26 @@
 				)
 			)
 		);
+		$meta_boxes['featured_image_location'] = array(
+			'id'         => 'Featured Image Location',
+			'title'      => __( 'Featured Image Location', 'cmb' ),
+			'pages'      => array('page',),
+			'context'    => 'normal',
+			'priority'   => 'high',
+			'show_names' => false, 
+			"desc"       => "asdf",
+			'fields'     => array(
+				array(
+					'name' => "featured_image_location",
+					'id'   => "featured_image_location",
+					'type' => 'select',
+					'options' => array(
+						'Bottom'=>'Bottom',
+						'Top'=>'Top'
+					)
+				)
+			)
+		);
 
 		return $meta_boxes;
 	}

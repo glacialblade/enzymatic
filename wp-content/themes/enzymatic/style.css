@@ -189,6 +189,9 @@ hr{
 	background:none;
 	display:inline;
 }
+#content #left #featured_image_shadow{
+	margin-top:-17px;
+}
 .testimonial:first-child{
 	border:none;
 }
@@ -428,6 +431,13 @@ hr{
 		margin:0 auto;
 		width:90%;
 		padding:0px;
+	}
+	#content #left #featured_image_shadow,#content #left #featured_image{
+		text-align:center;
+	}
+	#content #left #featured_image_shadow img,#content #left #featured_image img{
+		width:90%;
+		height:auto !important;
 	}
 	#content #right{
 		float:none;

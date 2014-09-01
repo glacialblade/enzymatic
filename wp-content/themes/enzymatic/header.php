@@ -27,14 +27,14 @@
 			<div id="contact">
 				CALL US
 				<span class="blue"><?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?></span>
-				<!--
-				<br/>
-				<div id="code">
-					<?php //get_image("entercode.png","code"); ?>
-					<div id="codecontent">sample code goes here.</div>
-				</div>
-				<div class="clear"></div>
-				!-->
+				<?php $parents = get_post_ancestors( get_the_ID() ); ?>
+				<?php if($parents[0] == 148): ?>
+					<br/>
+					<div id="header_code">
+						<?php get_image("code.jpg","code"); ?>
+					</div>
+					<div class="clear"></div>
+				<?php endif; ?>
 			</div>
 			<div class="clear"></div>
 		</div>

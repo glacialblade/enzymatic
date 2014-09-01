@@ -65,7 +65,31 @@ hr{
 	float: right;
 	font-size: 30px;
 	font-weight: bold;
-	margin-top:130px;
+	position:absolute;
+	bottom:20px;
+	right:0px;
+}
+#header #header_code{
+	position:relative;
+	width:326px;
+	float:right;
+	padding:0px;
+	margin:0px;
+	height:92px;
+	margin-top:10px;
+}
+#header #header_code_content{
+	position:absolute;
+	font-size:13px;
+	font-family:'Cuprum';
+	bottom:2px;
+	left:5px;
+	color:white;
+	text-shadow:1px 1px #999999;
+	-webkit-text-shadow: 1px 1px #999999;
+	-khtml-text-shadow: 1px 1px #999999;
+	-moz-text-shadow: 1px 1px #999999;
+	font-weight:normal;
 }
 #navigation ul{
 	padding: 0px;
@@ -556,6 +580,11 @@ hr{
 		float:none;
 		margin-top:20px;
 		text-align:center;
+		position:inherit;
+	}
+	#header #header_code{
+		float:none;
+		margin:0 auto;
 	}
 	.bannertext{
 		font-size:18px;
@@ -604,5 +633,12 @@ hr{
 	#twentyfourseven{
 		width:90%;
 		margin:0 auto;
+	}
+	#header_code{
+		width:90% !important;
+	}
+	#header_code img{
+		width:100% !important;
+		height:auto !important;
 	}
 }

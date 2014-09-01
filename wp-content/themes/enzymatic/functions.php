@@ -15,10 +15,9 @@
 
 	function enzymatic_widgets(){
 		require( get_template_directory() . '/includes/widgets/imagelink/index.php' );
-		require( get_template_directory() . '/includes/widgets/code/index.php' );
+		//require( get_template_directory() . '/includes/widgets/code/index.php' );
 
 		register_widget( 'ImageLinks' );
-		register_widget( 'Code' );
 		register_sidebar( array(
 			'name' => __('Sidebar'),
 			'id' => 'sidebar',

@@ -22,6 +22,7 @@
 
 		public function options(){
 			register_setting('enzymatic_contact_group','enzymatic_contact_setting');
+			register_setting('enzymatic_image_group','enzymatic_image_setting');
 		}
 
 		public function index(){

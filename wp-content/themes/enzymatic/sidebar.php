@@ -38,8 +38,13 @@
 		<br/><br/>
 		<?php echo enzymatic_setting("enzymatic_contact_setting","address"); ?>
 		<br/><br/>
-		Tel: <?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?><br/>
-		Mail: 
+		<?php echo get_image("icon_mobile_dark.png","icon_mobile"); ?>
+		<a href="tel:<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>">
+			<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>
+		</a>
+		<br/>
+		
+		<?php echo get_image("icon_email_dark.png","icon_email"); ?>
 		<a href="mailto:<?php echo enzymatic_setting("enzymatic_contact_setting","email"); ?>"><?php echo enzymatic_setting("enzymatic_contact_setting","email"); ?></a>
 	</div>
 </div>

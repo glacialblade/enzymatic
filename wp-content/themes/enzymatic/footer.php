@@ -27,7 +27,11 @@
 							</tr>
 							<tr>
 								<td valign="top"><?php get_image("icon_mobile.png","number"); ?></td>
-								<td>Tel: <?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?></td>
+								<td>
+									<a href="tel:<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>">
+										<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>
+									</a>
+								</td>
 							</tr>
 							<tr>
 								<td valign="top"><?php get_image("icon_email.png","email"); ?></td>

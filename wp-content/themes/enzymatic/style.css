@@ -75,7 +75,7 @@ hr{
 	float:right;
 	padding:0px;
 	margin:0px;
-	height:92px;
+	height:73px;
 	margin-top:10px;
 }
 #header #header_code_content{
@@ -628,7 +628,7 @@ hr{
 }
 @media screen and (max-width: 370px){
 	#contact{
-		font-size:19px !important;
+		/*font-size:19px !important;*/
 	}
 	#twentyfourseven{
 		width:90%;

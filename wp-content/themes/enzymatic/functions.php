@@ -59,4 +59,40 @@
 		$values = get_option($setting);
 		return $values[$key];
 	}
+
+	// Add Formats Dropdown Menu To MCE
+	function enzymatic_style_select( $buttons ) {
+		array_push( $buttons, 'styleselect' );
+		return $buttons;
+	}
+	add_filter( 'mce_buttons', 'enzymatic_style_select' );
+
+	function enzymatic_styles_dropdown( $settings ) {
+		// Create array of new styles
+		$new_styles = array(
+			array(
+				'title'	=> 'Custom Styles',
+				'items'	=> array(
+					array(
+						'title'	=> 'Pin List',
+						'selector' => 'ul',
+						'block'	=> 'li',
+						'classes' => 'pin'
+					)
+				),
+			),
+		);
+
+		// Merge old & new styles
+		$settings['style_formats_merge'] = true;
+
+		// Add new styles
+		$settings['style_formats'] = json_encode( $new_styles );
+
+		// Return New Settings
+		return $settings;
+
+	}
+
+	add_filter( 'tiny_mce_before_init', 'enzymatic_styles_dropdown' );
 ?>

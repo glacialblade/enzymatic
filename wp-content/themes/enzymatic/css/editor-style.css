@@ -49,10 +49,10 @@ ul{
 	margin-top:10px;
 }
 ul li{
-	background-image: url(../images/listimage.png);
+	background-image: url(../images/listimage2.png);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
-	padding-left: 20px;
+	padding-left: 25px;
 }
 ul.pin li{
 	background-image: url(../images/listimage3.png);

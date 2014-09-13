@@ -2,7 +2,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title(' '); ?><?php if(wp_title(' ', false)) { echo ' -'; } ?> <?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()."/images/favicon.png"; ?>">
@@ -23,10 +23,15 @@
 	<div id="wrapper">
 		<div id="headerbg"></div>
 		<div id="header">
-			<div id="logo"><a class="nounderline" href="<?php get_bloginfo(); ?>"><?php get_image("logo.png","logo"); ?></a></div>
+			<div id="logo"><a class="nounderline" href="/"><?php get_image("logo.png","logo"); ?></a></div>
 			<div id="contact">
-				CALL US
-				<span class="blue"><?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?></span>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/telephone_header_icon.jpg" alt="telphone_icon" 
+				     valign="bottom"/>
+				<span>
+					<a class="nounderline blue" href="tel:<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>" class="blue">
+						<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>
+					</a>
+				</span>	
 				<?php $parents = get_post_ancestors( get_the_ID() ); ?>
 				<?php if($parents[0] == 148): ?>
 					<br/>

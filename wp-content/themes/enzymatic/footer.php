@@ -7,7 +7,9 @@
 			<div id="footercontent">
 				<div class="footerbox">
 					<div class="center">
-						<a class="nounderline" href="<?php get_bloginfo(); ?>"><?php get_image("footerlogo.png","Enzymatic"); ?></a>
+						<a class="nounderline" href="<?php get_bloginfo(); ?>">
+							<img src="<?php echo enzymatic_setting("enzymatic_image_setting","footerlogo"); ?>" alt="footerlogo" />
+						</a>
 					</div><br/>
 					<div class="footerboxcontent">
 						<?php $aboutus = get_post_meta( 7 ); ?>

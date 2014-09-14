@@ -23,9 +23,13 @@
 	<div id="wrapper">
 		<div id="headerbg"></div>
 		<div id="header">
-			<div id="logo"><a class="nounderline" href="/"><?php get_image("logo.png","logo"); ?></a></div>
+			<div id="logo">
+				<a class="nounderline" href="/">
+					<img src="<?php echo enzymatic_setting("enzymatic_image_setting","logo"); ?>" alt="logo"/>
+				</a>
+			</div>
 			<div id="contact">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/telephone_header_icon.jpg" alt="telphone_icon" 
+				<img src="<?php echo enzymatic_setting("enzymatic_image_setting","headercontacticon"); ?>" alt="headercontacticon"
 				     valign="bottom"/>
 				<span>
 					<a class="nounderline blue" href="tel:<?php echo enzymatic_setting("enzymatic_contact_setting","contactnumber"); ?>" class="blue">
@@ -36,7 +40,8 @@
 				<?php if($parents[0] == 148): ?>
 					<br/>
 					<div id="header_code">
-						<?php get_image("code.jpg","code"); ?>
+						<img src="<?php echo enzymatic_setting("enzymatic_image_setting","code"); ?>" alt="code"
+				     		 valign="bottom"/>
 					</div>
 					<div class="clear"></div>
 				<?php endif; ?>

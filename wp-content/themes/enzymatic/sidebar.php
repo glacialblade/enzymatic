@@ -11,7 +11,7 @@
 </div>
 <!-->
 
-<img src="/wp-content/themes/enzymatic/images/247.png" alt="image" id="twentyfourseven">
+<?php get_image("247.png","247"); ?>
 <br/><br/>
 <div class="sidebarbox">
 	<?php 
